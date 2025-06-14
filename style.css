@@ -1,0 +1,291 @@
+/* Importar una fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa;
+  color: #333333;
+}
+
+header {
+  background-color: #49502c;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  background-color: #ecf0f1;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+nav button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #2980b9;
+}
+
+main {
+  padding: 20px;
+}
+
+.galeria {
+  display: none;
+  text-align: center;
+}
+
+.galeria h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #50482c;
+}
+
+.galeria img {
+  width: 220px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+footer {
+  text-align: center;
+  background-color: #49502c;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 0.9em;
+}
+/* Diseño responsive para tablets y móviles */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav button {
+    width: 90%;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+
+  .galeria img {
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  nav button {
+    font-size: 0.95em;
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 0.8em;
+    padding: 15px 10px;
+  }
+
+  .galeria h2 {
+    font-size: 1.5em;
+  }
+}
+/* Icono hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  margin: 15px;
+  color: #fff;
+}
+
+/* Estilo por defecto del menú */
+nav#menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Modo responsive para el menú */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    text-align: center;
+  }
+
+  nav#menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav#menu.visible {
+    display: flex;
+  }
+}
+/* ==== FONDO GENERAL ==== */
+body {
+  background-image: url("img/fondo.jpg"); /* Cambia el nombre según tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  backdrop-filter: brightness(0.9);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==== ENCABEZADO ==== */
+header {
+  background-color: rgba(24, 34, 54, 0.822);
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1.1em;
+}
+
+/* ==== BOTÓN HAMBURGUESA ==== */
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  margin: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+/* ==== MENÚ DE NAVEGACIÓN ==== */
+nav#menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+nav#menu button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #e9ecf0e1;
+  color: rgba(7, 7, 7, 0.911);
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+nav#menu button:hover {
+  background-color: #6e7061;
+}
+
+/* ==== GALERÍAS ==== */
+.galeria {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.galeria h2 {
+  color: #252525da;
+  margin-bottom: 15px;
+}
+
+.galeria img {
+  max-width: 200px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+/* ==== PIE DE PÁGINA ==== */
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  margin-top: 30px;
+}
+
+/* ==== RESPONSIVE: MENÚ ==== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav#menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav#menu.visible {
+    display: flex;
+  }
+
+  nav#menu button {
+    width: 80%;
+    margin: 5px 0;
+  }
+
+  .galeria img {
+    max-width: 90%;
+  }
+}
+
